@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "52b5b65c-c8b2-4c7a-8b9b-d22ad8f87f68",
+		"name": "QA Ecommerce API Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33930744"
+	},
+	"item": [
+		{
+			"name": "GET Homepage",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Статусът е 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Отговорът съдържа HTML\", function () {\r",
+							"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"text/html\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://testerbud.com/practice-ecommerece-website",
+					"protocol": "https",
+					"host": [
+						"testerbud",
+						"com"
+					],
+					"path": [
+						"practice-ecommerece-website"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

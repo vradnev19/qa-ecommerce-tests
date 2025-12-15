@@ -11,7 +11,7 @@ jobs:
 
   defaults:
       run:
-        working-directory: D:\CV\GitHub Projects\QAEcommerceTests\qa-ecommerce-tests\.github\workflows
+        working-directory: ./Vasil - Technical
   steps:
       - name: Checkout repository
         uses: actions/checkout@v3

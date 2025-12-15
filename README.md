@@ -40,3 +40,11 @@
 
 # npx newman run api-tests/postman\_collection.json
 
+
+
+!\[UI Tests](https://github.com/vradnev19/qa-ecommerce-tests/actions/workflows/ui-tests.yml/badge.svg)
+
+!\[API Tests](https://github.com/vradnev19/qa-ecommerce-tests/actions/workflows/api-tests.yml/badge.svg)
+
+
+

@@ -9,7 +9,10 @@ jobs:
   playwright-tests:
     runs-on: ubuntu-latest
 
-    steps:
+  defaults:
+      run:
+        working-directory: D:\CV\GitHub Projects\QAEcommerceTests\qa-ecommerce-tests\.github\workflows
+  steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
